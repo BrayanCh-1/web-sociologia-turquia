@@ -1,0 +1,153 @@
+/* General Body Styles */
+body {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #cc0000; /* Texto rojo */
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* General Text Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #cc0000; /* Rojo */
+    margin: 0;
+}
+
+p {
+    color: #333333; /* Gris oscuro para mayor legibilidad */
+}
+
+a {
+    color: #cc0000; /* Rojo */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff4d4d; /* Rojo claro */
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: #cc0000; /* Rojo */
+    color: #ffffff; /* Blanco */
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4d4d; /* Rojo más claro */
+    transform: scale(1.05);
+}
+
+/* Header Styles */
+header {
+    background-color: #cc0000; /* Rojo */
+    color: #ffffff; /* Blanco */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header a {
+    color: #ffffff; /* Blanco */
+}
+
+header a:hover {
+    color: #ffcccc; /* Rojo claro */
+}
+
+/* Services Section */
+.single-services {
+    border: 1px solid #cc0000; /* Borde rojo */
+    background-color: #ffffff; /* Blanco */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-services:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.single-services img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.single-services h3 a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #cc0000; /* Rojo */
+}
+
+.single-services h3 a:hover {
+    color: #ff4d4d; /* Rojo claro */
+}
+
+.single-services p {
+    font-size: 14px;
+    color: #555555; /* Gris oscuro */
+}
+
+/* Footer Styles */
+.footer-area {
+    background-color: #cc0000; /* Rojo */
+    color: #ffffff; /* Blanco */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-area a {
+    color: #ffffff; /* Blanco */
+}
+
+.footer-area a:hover {
+    color: #ffcccc; /* Rojo claro */
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* General Layout */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-lg-4, .col-md-6, .col-sm-10 {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+}
+
+@media (max-width: 768px) {
+    .col-lg-4, .col-md-6, .col-sm-10 {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .col-lg-4, .col-md-6, .col-sm-10 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
